@@ -1,0 +1,83 @@
+
+body {
+  background-color: #f1e4d6; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.markdown-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f1e4d6; 
+  min-height: 100vh; 
+}
+
+
+.editor {
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  padding: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff5a1; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s ease;
+}
+
+
+.editor:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.preview {
+  width: 100%;
+  max-width: 700px;
+  min-height: 300px;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
+}
+
+
+.preview:hover {
+  background-color: #f1f1f1;
+}
+
+
+.server-button {
+  padding: 1rem 2rem; 
+  font-size: 18px; 
+  color: white;
+  background-color: #28a745; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.server-button:hover {
+  background-color: #218838; 
+  transform: scale(1.05); 
+}
+
+
+.server-button:active {
+  background-color: #1e7e34;
+  transform: scale(1);
+}
